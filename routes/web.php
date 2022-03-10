@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('/Home', HomeController::class);
+Route::resource('/Home', EmployeeController::class);
