@@ -25,13 +25,6 @@
             <p>{{  $employee['birthday'] }}</p>
         </td>
         <td>
-            @if($employee['isnewstudent']==true)
-            <p>New Employee</p>
-            @else
-            <p>Old Employee</p>
-            @endif
-        </td>
-        <td>
         <form action="<?php echo $key ?>/destroy" method="POST">
         @csrf
         <input type="hidden" name="name" value= <?php echo $key ?>>
